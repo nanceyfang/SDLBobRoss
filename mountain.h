@@ -1,6 +1,8 @@
 #include<SDL.h>
 #include <vector>
 
+//Mountain object that can be made and drawn to the screen
+
 class Mountain {
 public: 
 	Mountain(SDL_Renderer*, SDL_Color, std::vector<SDL_Point>, const int);

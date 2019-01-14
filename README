@@ -4,16 +4,20 @@ Course: CPSC 4160
 
 Clemson Email Address: nfang@g.clemson.edu
 
-Project no: 2
-
-Project due date: Feb. 8, 2018
+How to Run: 
+Your machine needs SDL 2.0 installed. The Clemson lab machines should have
+them installed already. 
+	Type "make" to compile the program.
+	Type "./run" to run the program. 
+	You can exit by pressing "Esc" or just close the window. 
 
 Project description: (Also, what image did you draw?)
 An image created with the SDL using the SDL 2.0 primitives. This project is
 used to get practice with classes and the SDL.
 I drew a landscape based on a painting by Bob Ross. The landscape is of 
 mountains, hills, a lake, two swaying trees, moving clouds, and an 
-imported image of Bob Ross. 
+imported image of Bob Ross. This project is animated by adding a loop that'll
+redraw the primitives in a different location.
 
 The easiest part of this project:
 Finding a quote from Bob Ross for the overloaded output operator that prints 

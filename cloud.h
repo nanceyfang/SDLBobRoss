@@ -1,5 +1,7 @@
 #include <SDL.h>
 
+// Cloud object that can be made and drawn
+
 class Cloud {
 public:
 	Cloud(SDL_Renderer*, SDL_Point, const int);

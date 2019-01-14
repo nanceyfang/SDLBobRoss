@@ -24,6 +24,10 @@ void reduceFraction (int &numerator, int &denominator)
   }
 }
 
+// a Function that takes in a vector and two points
+// the function will find the slope between the two points and the
+// points inbetween to make a straight line. The points are put
+// into the vector
 void addPoints (std::vector<SDL_Point> &points,SDL_Point start,SDL_Point end)
 {
 	int num = end.y-start.y;
@@ -88,6 +92,7 @@ void drawBackground(SDL_Renderer* rend){
 	}
 }
 
+// function to draw to the screen
 void renderEverything(SDL_Renderer* rend, Cloud c1, Cloud c2, Mountain m1, 
 											Mountain m2, Mountain m3, Mountain m4, Tree t1, Tree t2){
 	drawBackground(rend);
@@ -121,7 +126,7 @@ int main(void) {
 	//draw backgroundGradient
 	drawBackground(renderer);
 
-	//Cloudssss
+	//Create and Draw Clouds
 	Cloud cloud1(renderer, {100, 2}, WIDTH);
 	cloud1.drawCloud();
 	Cloud cloud2(renderer, {440,30}, WIDTH);
@@ -286,6 +291,7 @@ int main(void) {
 
 	SDL_Event event;
   const Uint8* keystate;
+
   while ( true ) {
     keystate = SDL_GetKeyboardState(0);
     if (keystate[SDL_SCANCODE_ESCAPE]) { break; }
@@ -295,7 +301,7 @@ int main(void) {
       }
     }
 		
-	//try to animate	
+	//Loop for animation 
 		if(i%50000==0){
 			
 			renderEverything (renderer, cloud1, cloud2, mount, caps, hill1, hill2, 

@@ -1,6 +1,9 @@
 #include <SDL.h>
 #include <vector>
 
+// Tree object that can be made and drawn to the screen.
+// the leaves are randomly generated
+
 class Tree {
 public:
 	Tree(SDL_Renderer*, SDL_Point, const int);
